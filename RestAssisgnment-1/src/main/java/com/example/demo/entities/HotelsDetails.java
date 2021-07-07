@@ -11,7 +11,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 public class HotelsDetails {
 
 	@Id
-	//@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long hotel_id;
 	
 	public HotelsDetails() {

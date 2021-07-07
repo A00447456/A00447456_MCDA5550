@@ -14,7 +14,7 @@ public class Reservations {
 
 
 	@Id
-	//@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long reservation_id;
 		
 
