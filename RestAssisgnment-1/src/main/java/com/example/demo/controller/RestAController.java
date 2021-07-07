@@ -43,7 +43,7 @@ public class RestAController {
 	public String saveReservation (@RequestBody Reservations reservation) {
 		reservation.getGuests().forEach(guest -> guest.setReservation(reservation));
 		reservationsRepo.save(reservation);
-		return "Your Hotel Booking is Reserved";
+		return "Your Hotel is booked and " + Long.toString(reservation.getReservation_id()) + " is your reservation ID ";
 	}
 	
 	//@PostMapping(value = "/res")
