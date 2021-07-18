@@ -6,6 +6,7 @@
         <item name="colorPrimaryVariant">@color/dark_blue</item>
         <item name="colorOnPrimary">@color/white</item>
 
+
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/light_grey</item>
         <item name="colorSecondaryVariant">@color/dark_blue</item>
@@ -17,14 +18,13 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+
+
     <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
         <item name="boxStrokeColor">@color/light_grey</item>
         <item name="boxStrokeWidth">2dp</item>
     </style>
-
-
-
-
 
     <style name="EditTextTheme">
 
