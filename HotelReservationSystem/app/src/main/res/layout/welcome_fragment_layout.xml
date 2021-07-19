@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/androidhomepage"
-    tools:context=".WelcomeFragment">
+    tools:context=".WelcomeActivity">
 
     <TextView
         android:id="@+id/welcome_textView"
@@ -80,8 +80,14 @@
         app:layout_constraintTop_toBottomOf="@id/name_textview">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/getNameTextInput"
             android:layout_width="140dp"
             android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:inputType="text"
+            android:scrollHorizontally="false"
+            android:ellipsize="end"
+            android:layout_weight="1"
             android:textColor="@color/white"
             android:textSize="15sp"
             android:fontFamily="@font/poppins_medium"
@@ -90,6 +96,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+        android:id="@+id/letsGo_button"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:background="@drawable/checkin_custom_button"

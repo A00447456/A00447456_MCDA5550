@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HotelReservationSystem">
-        <activity android:name=".WelcomeFragment"></activity>
-        <activity android:name=".HotelSearchFragment" />
+        <activity android:name=".HotelListActivity"></activity>
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".HotelSearchActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
