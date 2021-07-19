@@ -4,102 +4,73 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/androidhomepage"
+    android:background="@drawable/hotel_search_bg"
     tools:context=".HotelSearchFragment">
 
-    <TextView
-        android:id="@+id/welcome_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="230dp"
-        android:fontFamily="@font/poppins_bold"
-        android:shadowColor="@color/dark_blue"
-        android:shadowDx="5"
-        android:shadowDy="5"
-        android:shadowRadius="3"
-        android:text="Welcome"
-        android:textColor="@color/white"
-        android:textSize="35sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/slogan_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="Let's take you to the, best place to be!"
-        android:textColor="@color/light_grey"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/welcome_textView" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Sometimes You Just Need To"
+        android:textColor="@color/light_grey2"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="20sp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"/>
 
     <TextView
-        android:id="@+id/name_textview"
+        android:id="@+id/getaway_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Who do we have with us today!"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="25dp"
-        android:layout_marginLeft="15dp"
         app:layout_constraintTop_toBottomOf="@id/slogan_textview"
-        android:textColor="@color/white"
-        android:fontFamily="@font/poppins_medium"/>
+        android:text="GET AWAY"
+        android:textColor="@color/light_grey"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="21sp"
+        android:layout_marginLeft="24dp"/>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/name_input_textfield"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="140dp"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="12dp"
-        android:hint="Name"
-        android:textColorHint="@color/light_grey"
-        app:hintTextAppearance="@style/EditTextTheme"
-        android:theme="@style/LoginTextInputLayoutStyle"
-        app:boxStrokeColor="@color/light_grey"
-        app:layout_constraintBottom_toBottomOf="@+id/name_textview"
-        app:layout_constraintStart_toEndOf="@+id/name_textview"
-        app:layout_constraintTop_toTopOf="@+id/name_textview"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginRight="15dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/getaway_textview"
+        android:text="by just giving us few more details ;)"
+        android:textColor="@color/light_grey"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="12sp"
+        android:layout_marginLeft="24dp"/>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="140dp"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:textSize="15sp"
-            android:fontFamily="@font/poppins_medium"
-            />
-
-    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/checkInAndOut_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Let us know about your dates of stay"
+        android:textSize="18sp"
         android:textColor="@color/white"
         android:fontFamily="@font/poppins_medium"
-        app:layout_constraintTop_toBottomOf="@id/name_textview"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="33dp"
+        android:layout_marginTop="270dp"
+
         />
 
     <Button
         android:id="@+id/checkInAndOut_button"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/checkin_custom_button"
         android:fontFamily="@font/poppins_bold"
         android:text="Check In and Out dates"
         android:textAllCaps="false"
         android:textColor="@color/dark_blue"
-        android:textSize="10dp"
+        android:textSize="11sp"
         app:backgroundTint="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -110,7 +81,7 @@
         android:id="@+id/selectedDate_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/poppins"
         android:text="Select your dates"
         android:textColor="#FFFFFF"
@@ -124,9 +95,9 @@
         android:id="@+id/numberOfGuests_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="35dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="27dp"
+        android:layout_marginTop="55dp"
         android:fontFamily="@font/poppins_medium"
         android:text="Number of guests"
         android:textColor="@color/white"
@@ -167,7 +138,7 @@
         app:layout_constraintTop_toBottomOf="@id/numberOfGuests_textInput"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="27dp"
+        android:layout_marginTop="55dp"
         android:background="@drawable/search_custom_button"
         android:text="s e a r c h"
         android:drawableLeft="@android:drawable/ic_menu_search"
