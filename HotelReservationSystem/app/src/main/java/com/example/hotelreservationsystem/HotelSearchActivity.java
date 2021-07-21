@@ -82,11 +82,12 @@ public class HotelSearchActivity extends AppCompatActivity {
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String numberOfGuests=numberOfGuestsInput.getText().toString();
+                String numberOfGuests = numberOfGuestsInput.getText().toString();
                 Intent intent = new Intent(HotelSearchActivity.this, HotelListActivity.class);
                 intent.putExtra("number of guests", numberOfGuests);
                 intent.putExtra("Check in date", startDateString);
                 intent.putExtra("Check out date", endDateString);
+                intent.putExtra("guest name", checkInOutOutput);
                 startActivity(intent);
             }
         });
