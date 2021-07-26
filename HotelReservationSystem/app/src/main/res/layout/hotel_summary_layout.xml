@@ -4,126 +4,215 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/hotel_search_bg"
     tools:context=".HotelSummaryActivity">
 
-
     <ImageView
-        android:id="@+id/container_image"
-        android:transitionName="containerTN"
-        android:layout_width="0dp"
-        android:layout_height="130dp"
-        android:background="@drawable/hotel_container_bg"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/white_shape"
+        app:layout_constraintTop_toBottomOf="@+id/scrollview"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/container_image"-->
+    <!--        android:transitionName="containerTN"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="130dp"-->
+    <!--        android:background="@drawable/hotel_container_bg"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="1.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <TextView
+        android:id="@+id/hotelName_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Hotel 1"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:transitionName="hotelNameTN"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/hotelName_textView"
-        android:transitionName="hotelNameTN"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Hotel 1"
-        android:textColor="@color/dark_blue"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="@+id/container_image"
-        app:layout_constraintStart_toEndOf="@+id/hotel_image"
-        app:layout_constraintTop_toTopOf="@+id/container_image" />
-
-    <TextView
         android:id="@+id/price_textView"
-        android:transitionName="priceTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Price"
-        android:textColor="@color/light_grey2"
+        android:textColor="@color/light_grey"
         android:textSize="17dp"
-        app:layout_constraintEnd_toEndOf="@+id/container_image"
-        app:layout_constraintTop_toBottomOf="@+id/availability_textView" />
+        android:transitionName="priceTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotelName_textView" />
+
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/hotel_image"-->
+    <!--            android:layout_width="80dp"-->
+    <!--            android:layout_height="100dp"-->
+    <!--            android:background="@drawable/h1"-->
+    <!--            android:scaleType="centerCrop"-->
+    <!--            android:layout_marginLeft="12dp"-->
+    <!--            app:layout_constraintBottom_toBottomOf="@id/container_image"-->
+    <!--            app:layout_constraintStart_toStartOf="@id/container_image"-->
+    <!--            app:layout_constraintTop_toTopOf="@id/container_image" />-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/availability_textView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:layout_marginRight="16dp"-->
+<!--        android:fontFamily="@font/poppins_semibold"-->
+<!--        android:text="Availability"-->
+<!--        android:textColor="@color/light_grey"-->
+<!--        android:transitionName="availabilityTN"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/hotelName_textView" />-->
 
     <TextView
-        android:id="@+id/availability_textView"
-        android:transitionName="availabilityTN"
-        android:fontFamily="@font/poppins_semibold"
-        android:textColor="@color/light_grey2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:text="Availability"
-        app:layout_constraintEnd_toEndOf="@id/container_image"
-        app:layout_constraintTop_toTopOf="@id/container_image" />
-
-
-
-        <ImageView
-            android:id="@+id/hotel_image"
-            android:layout_width="80dp"
-            android:layout_height="100dp"
-            android:background="@drawable/h1"
-            android:scaleType="centerCrop"
-            android:layout_marginLeft="12dp"
-            app:layout_constraintBottom_toBottomOf="@id/container_image"
-            app:layout_constraintStart_toStartOf="@id/container_image"
-            app:layout_constraintTop_toTopOf="@id/container_image" />
-
-
-    <TextView
-        android:transitionName="details1TN"
         android:id="@+id/details1_textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="Your stay details"
-        android:fontFamily="@font/poppins_medium"
-        app:layout_constraintTop_toBottomOf="@id/container_image"
-        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center_horizontal"
+        android:text="Hey justin!"
+        android:textSize="21dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:transitionName="details1TN"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="180dp" />
+        app:layout_constraintTop_toBottomOf="@+id/price_textView" />
+
     <TextView
         android:id="@+id/details2_textView"
-        android:transitionName="details2TN"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:text="Your stay details"
+        android:layout_marginTop="5dp"
         android:fontFamily="@font/poppins_medium"
-        app:layout_constraintTop_toBottomOf="@id/details1_textView"
-        android:layout_marginTop="15dp"
+        android:text="Let's get details of your 4 travel mates from this to that"
+        android:textAlignment="center"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="180dp" />
+        app:layout_constraintTop_toBottomOf="@id/details1_textView"
+        android:gravity="center_horizontal" />
 
     <TextView
         android:id="@+id/details3_textView"
-        android:transitionName="details3TN"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:text="Your stay details"
-        android:fontFamily="@font/poppins_medium"
-        app:layout_constraintTop_toBottomOf="@id/details2_textView"
-        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/details2_textView"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="jkhfvfksbvksjdvbksbvs"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"/>
+
+
+
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/scroll_shape"
+        android:fadingEdgeLength="10dp"
+        android:outlineSpotShadowColor="@color/dark_blue"
+        android:requiresFadingEdge="vertical"
+        app:layout_constraintBottom_toTopOf="@id/bookButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="180dp" />
+        app:layout_constraintTop_toBottomOf="@+id/details3_textView">
+
+        <LinearLayout
+            android:id="@+id/guestLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:divider="@drawable/divider"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="206dp"
+        android:layout_height="278dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/mountain_copy"
+        app:layout_constraintEnd_toEndOf="@+id/scrollview"
+        app:layout_constraintTop_toTopOf="@id/scrollview" />
+
+    <Button
+        android:id="@+id/bookButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/book_custom_button"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="G E T  A W A Y"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <View
+        android:id="@+id/circleShape"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/circle"
+        app:layout_constraintTop_toTopOf="@id/bookButton"
+        app:layout_constraintStart_toStartOf="@id/bookButton"
+        app:layout_constraintBottom_toBottomOf="@id/bookButton"
+        app:layout_constraintEnd_toEndOf="@id/bookButton"/>
+
+    <TextView
+        android:id="@+id/dummyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

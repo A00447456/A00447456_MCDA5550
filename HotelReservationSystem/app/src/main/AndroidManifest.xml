@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HotelReservationSystem"
         android:usesCleartextTraffic="true">
+        <activity android:name=".FinalScreen"></activity>
         <activity android:name=".HotelSummaryActivity"></activity>
         <activity android:name=".HotelListActivity" />
         <activity android:name=".WelcomeActivity" />

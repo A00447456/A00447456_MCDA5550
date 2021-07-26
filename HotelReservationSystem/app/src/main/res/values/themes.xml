@@ -5,6 +5,8 @@
         <item name="colorPrimary">@color/light_grey</item>
         <item name="colorPrimaryVariant">@color/dark_blue</item>
         <item name="colorOnPrimary">@color/white</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="fontFamily">@font/poppins_medium</item>
 
 
         <!-- Secondary brand color. -->
@@ -17,6 +19,19 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+        <item name="android:editTextStyle">@style/EditTextStyle</item>
+        <item name="editTextStyle">@style/EditTextStyle</item>
+    </style>
+
+    <style name="EditTextStyle" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:background">@drawable/edit_text_shape</item>
+        <item name="android:hint">@drawable/edit_text_shape</item>
+        <item name="android:padding">7dp</item>
+
+        <item name="android:windowActivityTransitions">true</item>
+
     </style>
 
 
@@ -33,6 +48,7 @@
         <item name="colorControlActivated">@color/light_grey</item>
         <item name="colorControlHighlight">@color/light_grey</item>
         <item name="android:textSize">8sp</item>
+        <item name="android:background">@drawable/edit_text_shape</item>
     </style>
 
 

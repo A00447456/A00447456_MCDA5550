@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="EditTextStyle" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:background">@drawable/edit_text_shape</item>
+        <item name="android:hint">@drawable/edit_text_shape</item>
+        <item name="android:padding">7dp</item>
+
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowEnterTransition">@transition/trans_anim</item>
+        <item name="android:windowExitTransition">@transition/trans_anim</item>
+
+    </style>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/guestName_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="@color/dark_blue"
+        android:text="Guest Name"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/guestName_input_textfield"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:hint="Guest Name"
+        android:textColorHint="@color/light_grey"
+        android:theme="@style/LoginTextInputLayoutStyle"
+        app:boxStrokeColor="@color/light_grey"
+        app:hintTextAppearance="@style/EditTextTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/guestName_textView"
+        app:layout_constraintStart_toEndOf="@+id/guestName_textView"
+        app:layout_constraintTop_toTopOf="@+id/guestName_textView"
+        android:layout_marginLeft="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/getNameTextInput"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="text"
+            android:maxLines="1"
+            android:scrollHorizontally="false"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:layout_editor_absoluteX="132dp"
+            tools:layout_editor_absoluteY="130dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/guestAge_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guestName_input_textfield"
+        android:layout_marginTop="23dp"
+        android:textColor="@color/dark_blue"
+        android:layout_marginLeft="50dp"
+        android:text="Guest Age"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/guestAge_input_textfield"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:hint="Guest Name"
+        android:textColorHint="@color/light_grey"
+        android:theme="@style/LoginTextInputLayoutStyle"
+        app:boxStrokeColor="@color/light_grey"
+        app:hintTextAppearance="@style/EditTextTheme"
+        app:layout_constraintEnd_toEndOf="@id/guestName_input_textfield"
+        app:layout_constraintBottom_toBottomOf="@+id/guestAge_textView"
+        app:layout_constraintStart_toStartOf="@+id/guestName_input_textfield"
+        app:layout_constraintTop_toTopOf="@+id/guestAge_textView"
+        android:layout_marginLeft="0dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/getAgeTextInput"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="number"
+            android:maxLines="1"
+            android:scrollHorizontally="false"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:layout_editor_absoluteX="132dp"
+            tools:layout_editor_absoluteY="130dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

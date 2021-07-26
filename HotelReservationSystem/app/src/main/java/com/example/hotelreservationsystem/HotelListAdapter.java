@@ -52,6 +52,7 @@ public class HotelListAdapter extends RecyclerView.Adapter<HotelListAdapter.View
         String hotelName = hotelListData.get(position).getHotelName();
         String hotelPrice = hotelListData.get(position).getPrice();
         String hotelAvailability = hotelListData.get(position).getAvailability();
+        int hotel_id = hotelListData.get(position).getHotel_id();
      //   int image_id = images[position];
 
         holder.hotelName.setText(hotelName);

@@ -66,7 +66,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toEndOf="@id/hotel_image"
         app:layout_constraintTop_toBottomOf="@id/price_textView"
-        android:text="Open to see more details"
+        android:text="Open to GET AWAY with this hotel"
         android:fontFamily="@font/poppins"
         android:textColor="@color/light_grey2"
         android:layout_marginLeft="16dp"

@@ -5,23 +5,17 @@ import java.io.Serializable;
 public class HotelListData implements Serializable {
 
 
+
+
     String hotel_name, price,availability;
+    int hotel_id;
 
-
-
-    public HotelListData(String hotel_name, String price, String availability) {
+    public HotelListData(String hotel_name, String price, String availability, int hotel_id) {
         this.hotel_name = hotel_name;
         this.price = price;
         this.availability = availability;
-       // this.imgUrl = imgUrl;
-      //  DrawableResource = drawableResource;
+        this.hotel_id = hotel_id;
     }
-
-
-
-
-
-
 
     public HotelListData() {
     }
@@ -48,6 +42,14 @@ public class HotelListData implements Serializable {
 
     public void setAvailability(String availability) {
         this.availability = availability;
+    }
+
+    public int getHotel_id() {
+        return hotel_id;
+    }
+
+    public void setHotel_id(int hotel_id) {
+        this.hotel_id = hotel_id;
     }
 
    // public String getImgUrl() {

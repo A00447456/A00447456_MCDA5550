@@ -2,6 +2,7 @@ package com.example.demo.controller;
 
 import java.util.List;
 
+import com.example.demo.entities.ReservationId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -40,10 +41,13 @@ public class RestAController {
 	}
 	
 	@PostMapping(value = "/reservation")
-	public String saveReservation (@RequestBody Reservations reservation) {
+	public ReservationId saveReservation (@RequestBody Reservations reservation) {
 		reservation.getGuests().forEach(guest -> guest.setReservation(reservation));
 		reservationsRepo.save(reservation);
-		return "Your Hotel is booked and " + Long.toString(reservation.getReservation_id()) + " is your reservation ID ";
+		ReservationId reservationId = new ReservationId();
+		reservationId.setReservations(Long.toString(reservation.getReservation_id()));
+		return reservationId;
+		//return "Your Hotel is booked and " + Long.toString(reservation.getReservation_id()) + " is your reservation ID ";
 	}
 	
 	//@PostMapping(value = "/res")
